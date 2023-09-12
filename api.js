@@ -1,4 +1,4 @@
-import { initializeApp } from "firebase/app"
+import { initializeApp } from "firebase/app";
 import {
     getFirestore,
     collection,
@@ -11,19 +11,19 @@ import {
 } from "firebase/firestore/lite"
 
 const firebaseConfig = {
-    apiKey: "AIzaSyD_k3v3HK3tKEqhlqFHPkwogW7PqEqhGhk",
-    authDomain: "vanlife-a1af5.firebaseapp.com",
-    projectId: "vanlife-a1af5",
-    storageBucket: "vanlife-a1af5.appspot.com",
-    messagingSenderId: "803007000356",
-    appId: "1:803007000356:web:446cd3a1ca406839258db1"
-};
+    apiKey: "AIzaSyBlhvEf0oh770iOYOaDDTYFmZD0lHwXYj4",
+    authDomain: "vanlife-e5608.firebaseapp.com",
+    projectId: "vanlife-e5608",
+    storageBucket: "vanlife-e5608.appspot.com",
+    messagingSenderId: "278986953366",
+    appId: "1:278986953366:web:d0b733438d485482f628b7"
+  };
 
 const app = initializeApp(firebaseConfig)
 const db = getFirestore(app)
 
 // Refactoring the fetching functions below
-const vansCollectionRef = collection(db, "vans")
+const vansCollectionRef = collection(db, "Vans")
 
 export async function getVans() {
     const snapshot = await getDocs(vansCollectionRef)
@@ -35,7 +35,7 @@ export async function getVans() {
 }
 
 export async function getVan(id) {
-    const docRef = doc(db, "vans", id)
+    const docRef = doc(db, "Vans", id)
     const snapshot = await getDoc(docRef)
     return {
         ...snapshot.data(),
