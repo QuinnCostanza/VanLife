@@ -6,7 +6,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background-color: #fff7ed;
+    background-color: grey;
     font-family: "Inter", sans-serif;
 }
 
@@ -34,7 +34,7 @@ header {
     height: 110px;
     display: flex;
     align-items: center;
-    padding-block: 10px;
+    padding: 10px;
 }
 
 header .site-logo {
@@ -85,6 +85,13 @@ footer {
     align-items: center;
     margin-top: auto;
     font-weight: 500;
+}
+
+#root {
+    width: 750px;
+    margin: 0 auto;
+    background-color: #fff7ed;
+    /* border: 2px solid black; */
 }
 
 .link-button {
@@ -297,9 +304,6 @@ i[class*="van-type-"] {
 .van-detail-container .back-button {
     color: black;
     text-decoration: none;
-}
-
-.van-detail-container .back-button:visited {
 }
 
 .van-detail-container .back-button span {
