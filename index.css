@@ -752,4 +752,5 @@ img.graph {
     color:#4d4d4d;
     padding: 7px 14px;
     font-weight: bold;
+    cursor: pointer;
 }
