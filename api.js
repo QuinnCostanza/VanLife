@@ -19,7 +19,7 @@ const firebaseConfig = {
     appId: "1:278986953366:web:d0b733438d485482f628b7"
   };
 
-const app = initializeApp(firebaseConfig)
+  const app = initializeApp(firebaseConfig);
 const db = getFirestore(app)
 
 // Refactoring the fetching functions below
