@@ -744,3 +744,12 @@ img.graph {
     color: #ff8c38;
     margin-right: 5px;
 }
+
+.logout {
+    border: none;
+    border-radius: 5px;
+    background-color: #ffcc8d;
+    color:#4d4d4d;
+    padding: 7px 14px;
+    font-weight: bold;
+}
