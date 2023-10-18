@@ -8,9 +8,11 @@ export default function Header() {
         textDecoration: "underline",
         color: "#161616"
     }
+    const isLoggedIn = localStorage.getItem("loggedin")
 
     function fakeLogOut() {
         localStorage.removeItem("loggedin")
+        window.location.reload()
     }
 
     return (
@@ -41,7 +43,7 @@ export default function Header() {
                         className="login-icon"
                     />
                 </Link>
-                <button className="logout" onClick={fakeLogOut}>Log Out</button>
+                {isLoggedIn ? <button className="logout" onClick={fakeLogOut}>Log Out</button> : ""}
             </nav>
         </header>
     )

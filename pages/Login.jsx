@@ -20,6 +20,7 @@ export default function Login() {
                 setError(null)
                 localStorage.setItem("loggedin", true)
                 navigate(from, { replace: true })
+                window.location.reload()
             })
             .catch(err => {
                 setError(err)
