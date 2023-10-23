@@ -831,4 +831,8 @@ img.graph {
         height: 120px;
         margin-right: 15px;
     }
+
+    .home-container {
+        height: 80vh;
+    }
 }
