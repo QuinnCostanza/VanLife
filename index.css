@@ -50,7 +50,7 @@ header a {
     text-decoration: none;
     color: #4d4d4d;
     font-weight: 600;
-    padding: 5px 20px;
+    padding: 5px 16px;
 }
 
 header a:hover {
@@ -72,8 +72,17 @@ nav {
     display: flex;
 }
 
+.mobile-menu-open {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
 main {
-    margin-bottom: 84px;
+    /* margin-bottom: 84px; */
+    margin-bottom: 10px;
 }
 
 footer {
@@ -89,7 +98,7 @@ footer {
 }
 
 #root {
-    width: 750px;
+    max-width: 750px;
     margin: 0 auto;
     background-color: #fff7ed;
     /* border: 2px solid black; */
@@ -356,7 +365,7 @@ i[class*="van-type-"] {
     text-decoration: none;
     color: #4d4d4d;
     font-weight: 500;
-    padding: 5px 20px;
+    padding: 5px 10px;
 }
 
 .host-nav a:hover {
@@ -756,10 +765,49 @@ img.graph {
     cursor: pointer;
 }
 
-@media (width <= 500px) {
+@media (width <= 550px) {
     
     * {
-        font-size: 1.3rem;
+        /* font-size: 1.3rem; */
+    }
+
+    .show {
+        display: flex !important;
+    }
+
+    .desktop-nav {
+        display: flex;
+        flex-wrap: wrap;
+        display: none;
+    }
+
+    .mobile-nav {
+        padding: 10px;
+        background-color:#ffcc8d;
+        border-radius: 5px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        position: absolute;
+        top: 75px;
+        right: 5px;
+    }
+
+    .mobile-menu-open {
+        display: block;
+        border: none;
+        border-radius: 5px;
+        background-color: #ffcc8d;
+        color: #4d4d4d;
+        padding: 7px 14px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .logout-mobile {
+        width: 100px;
+        background-color:#ffcc8d;
     }
 
     .site-logo {
@@ -773,5 +821,14 @@ img.graph {
 
     .van-tile {
         width: 100%;
+    }
+
+    .van-list-filter-buttons {
+        gap:10px;
+    }
+
+    .host-van-detail > img {
+        height: 120px;
+        margin-right: 15px;
     }
 }
